@@ -1,0 +1,4 @@
+LIBRARY lib_quadwild
+EXPORTS
+    remeshAndField2
+    trace2

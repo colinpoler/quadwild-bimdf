@@ -107,3 +107,13 @@ add_subdirectory("components/viz_mesh_results")
 
 
 add_subdirectory(quadwild)
+
+option(
+    BUILD_QREMESHIFY_DLLS
+    "Build QRemeshify-compatible DLLs"
+    ON
+)
+
+if(BUILD_QREMESHIFY_DLLS)
+    add_subdirectory(compat)
+endif()
